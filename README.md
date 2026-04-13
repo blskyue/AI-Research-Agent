@@ -1,1 +1,26 @@
-"An intelligent search client powered by AI for advanced research."
+# Autonomous AI Research Agent 🤖🌐
+
+هذا المشروع عبارة عن وكيل ذكاء اصطناعي مستقل (Autonomous Agent) قادر على البحث في الإنترنت وتحليل المحتوى لتقديم إجابات دقيقة بناءً على بيانات لحظية. تم بناء المشروع كجزء من تطوير مهارات التعامل مع **Generative AI** وأطر عمل **LangChain**.
+
+## 🛠 التقنيات المستخدمة (Tech Stack)
+* **Framework:** [LangChain](https://www.langchain.com/) & [LangGraph](https://langchain-ai.github.io/langgraph/)
+* **LLMs:** Meta Llama 3.1 (70B) via **OpenRouter**
+* **Search Tool:** [Tavily Search API](https://tavily.com/)
+* **Language:** Python 🐍
+
+## 🚀 المميزات الرئيسية
+* **التفكير والعمل (ReAct Logic):** الوكيل لا يجيب من الذاكرة فقط، بل يقرر متى يحتاج للبحث في الإنترنت.
+* **البحث المتعدد:** يقوم الوكيل بالبحث عن روابط متعددة (Multi-step research).
+* **استخراج المحتوى (Content Fetching):** أداة مخصصة للدخول إلى الروابط وقراءة نص الصفحة بالكامل لتحليله.
+* **دعم اللغة العربية:** الوكيل مصمم لفهم وتنفيذ عمليات البحث باللغتين العربية والإنجليزية.
+
+## 📖 كيف يعمل المشروع؟
+1. يحلل الوكيل سؤال المستخدم.
+2. يستخدم `internet_search` لإيجاد روابط متعلقة بالموضوع.
+3. يستخدم `fetch_url` لقراءة تفاصيل المواقع المختارة.
+4. يقوم بصياغة إجابة نهائية شاملة بناءً على المصادر التي قرأها.
+
+## 💻 طريقة التشغيل
+للتشغيل، تحتاج إلى توفير المفاتيح التالية في بيئة العمل:
+- `OPENROUTER_API_KEY`
+- `TAVILY_API_KEY`
